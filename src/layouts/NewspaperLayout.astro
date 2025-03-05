@@ -1,0 +1,255 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Revolutionäre selbstaufblasbare Isomatte für Outdoor-Enthusiasten" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--newspaper-black: #121212;
+		--newspaper-dark: #333333;
+		--newspaper-gray: #666666;
+		--newspaper-light-gray: #e0e0e0;
+		--newspaper-bg: #f9f7f1;
+		--newspaper-accent: #c92c2c;
+		--newspaper-accent-light: #e05252;
+		--newspaper-border: #d1d1d1;
+	}
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	html {
+		font-family: 'Source Serif Pro', Georgia, serif;
+		background: var(--newspaper-bg);
+		color: var(--newspaper-black);
+	}
+	
+	body {
+		line-height: 1.6;
+	}
+	
+	h1, h2, h3, h4, h5 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+	
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 900;
+		margin-bottom: 1rem;
+	}
+	
+	h2 {
+		font-size: 1.8rem;
+		margin: 2rem 0 1rem;
+		border-bottom: 2px solid var(--newspaper-black);
+		padding-bottom: 0.5rem;
+	}
+	
+	h3 {
+		font-size: 1.4rem;
+		margin: 1.5rem 0 0.75rem;
+	}
+	
+	p {
+		margin-bottom: 1rem;
+	}
+	
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+	
+	.newspaper-header {
+		text-align: center;
+		padding: 1.5rem 0;
+		border-bottom: 3px double var(--newspaper-black);
+		margin-bottom: 2rem;
+	}
+	
+	.newspaper-title {
+		font-family: 'Playfair Display', serif;
+		font-weight: 900;
+		font-size: 3rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	
+	.newspaper-date {
+		font-style: italic;
+		color: var(--newspaper-gray);
+		margin-bottom: 0.5rem;
+	}
+	
+	.newspaper-subtitle {
+		font-family: 'Playfair Display', serif;
+		font-style: italic;
+		font-size: 1.2rem;
+		margin-top: 0.5rem;
+	}
+	
+	.article {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+	
+	.article-main {
+		font-size: 1.1rem;
+	}
+	
+	.article-sidebar {
+		background-color: var(--newspaper-light-gray);
+		padding: 1.5rem;
+		border: 1px solid var(--newspaper-border);
+	}
+	
+	.article-image {
+		max-width: 100%;
+		height: auto;
+		margin: 1.5rem 0;
+		border: 1px solid var(--newspaper-border);
+	}
+	
+	.article-caption {
+		font-size: 0.9rem;
+		font-style: italic;
+		color: var(--newspaper-gray);
+		text-align: center;
+		margin-top: 0.5rem;
+	}
+	
+	.article-lead {
+		font-size: 1.3rem;
+		font-weight: 600;
+		font-style: italic;
+		margin-bottom: 1.5rem;
+		border-bottom: 1px solid var(--newspaper-border);
+		padding-bottom: 1.5rem;
+	}
+	
+	.article-quote {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.4rem;
+		font-style: italic;
+		line-height: 1.4;
+		padding: 1rem 2rem;
+		margin: 1.5rem 0;
+		border-left: 4px solid var(--newspaper-accent);
+		background-color: var(--newspaper-light-gray);
+	}
+	
+	.article-quote-author {
+		font-size: 1rem;
+		font-style: normal;
+		text-align: right;
+		margin-top: 0.5rem;
+	}
+	
+	/* Remove multi-column layout */
+	.article-columns {
+		column-count: 1;
+	}
+	
+	.cta-button {
+		display: block;
+		background-color: var(--newspaper-accent);
+		color: white;
+		text-align: center;
+		padding: 1rem 2rem;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-decoration: none;
+		margin: 2rem auto;
+		max-width: 400px;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+	
+	.cta-button:hover {
+		background-color: var(--newspaper-accent-light);
+	}
+	
+	.testimonial {
+		background-color: white;
+		padding: 1.5rem;
+		margin: 1.5rem 0;
+		border: 1px solid var(--newspaper-border);
+		font-style: italic;
+	}
+	
+	.testimonial-author {
+		font-style: normal;
+		font-weight: 600;
+		text-align: right;
+		margin-top: 0.5rem;
+	}
+	
+	.feature-list {
+		margin: 1.5rem 0;
+		padding-left: 1.5rem;
+	}
+	
+	.feature-list li {
+		margin-bottom: 0.75rem;
+	}
+	
+	.highlight-box {
+		background-color: var(--newspaper-light-gray);
+		border: 1px solid var(--newspaper-border);
+		padding: 1.5rem;
+		margin: 2rem 0;
+	}
+	
+	.highlight-box h3 {
+		margin-top: 0;
+	}
+	
+	.faq-item {
+		margin-bottom: 1.5rem;
+	}
+	
+	.faq-question {
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+	
+	.faq-answer {
+		padding-left: 1rem;
+	}
+	
+	.newspaper-footer {
+		text-align: center;
+		padding: 2rem 0;
+		margin-top: 3rem;
+		border-top: 3px double var(--newspaper-black);
+		font-size: 0.9rem;
+		color: var(--newspaper-gray);
+	}
+</style>

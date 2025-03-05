@@ -1,0 +1,354 @@
+---
+import NewspaperLayout from '../layouts/NewspaperLayout.astro';
+import TestimonialBox from '../components/TestimonialBox.astro';
+import FeatureBox from '../components/FeatureBox.astro';
+import FaqItem from '../components/FaqItem.astro';
+
+const today = new Date();
+const formattedDate = today.toLocaleDateString('de-DE', {
+	weekday: 'long',
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+});
+---
+
+<NewspaperLayout title="Endlich schmerzfrei schlafen & 70% Stauraum sparen | Adventure Shop">
+	<div class="container">
+		<header class="newspaper-header">
+			<p class="newspaper-date">{formattedDate}</p>
+			<h1 class="newspaper-title">Outdoor Journal</h1>
+			<p class="newspaper-subtitle">Die führende Quelle für Outdoor-Enthusiasten</p>
+		</header>
+
+		<main>
+			<article>
+			
+				<div class="article-content">
+				<h1>Endlich schmerzfrei schlafen & 70% Stauraum sparen: Wie diese revolutionäre selbstaufblasbare Isomatte dein Outdoor-Erlebnis für immer verändert</h1>
+				
+					<p class="article-lead">Du kennst das Problem: Entweder gut schlafen oder leicht reisen - beides zusammen scheint unmöglich</p>
+					
+					<p>Stell dir vor: Nach einem langen Tag voller Abenteuer, kilometerlangem Wandern mit schwerem Gepäck oder ausgelassenem Tanzen beim Festival willst du einfach nur noch eines: erholsamen Schlaf. Doch anstatt in süße Träume zu sinken, wälzt du dich stundenlang von einer Seite auf die andere. Jeder kleine Stein, jede Wurzel und jede Bodenunebenheit scheint sich direkt in deinen Rücken zu bohren.</p>
+					
+					<p>Die kalte, harte Realität: Etwa 78% aller Outdoor-Enthusiasten berichten von Schlafproblemen auf ihren Abenteuern. Eine Studie der Deutschen Gesellschaft für Schlafforschung zeigt: Schlechter Schlaf im Freien ist nicht nur ärgerlich – er reduziert nachweislich die körperliche Leistungsfähigkeit am Folgetag um bis zu 35% und kann selbst das schönste Abenteuer zur Tortur machen.</p>
+					
+					<div class="article-image-container">
+						<img src="/images/isomatte-1.jpg" alt="Selbstaufblasbare Isomatte im Einsatz" class="article-image">
+						<p class="article-caption">Die selbstaufblasbare Isomatte von Adventure Shop entfaltet sich innerhalb von Minuten zu voller Größe</p>
+					</div>
+					
+					<p>Gleichzeitig wächst ein anderes Problem mit jedem zusätzlichen Ausrüstungsgegenstand in deinem Rucksack: Der begrenzte Platz. "Mit jedem Liter Packvolumen, den du sparst, gewinnst du Freiheit", sagt der erfahrene Bergführer Michael Brückner. Doch wie soll man diesen Spagat schaffen? Eine komfortable Schlafunterlage braucht Volumen, oder?</p>
+					
+					<p>Während du mit diesen widersprüchlichen Anforderungen kämpfst, fragst du dich vielleicht: Gibt es wirklich keine Lösung, die beides bietet – erstklassigen Schlafkomfort und minimales Packmaß?</p>
+					
+					<h2>Warum herkömmliche Schlafunterlagen dich im Stich lassen</h2>
+					
+					<p>Die Realität sieht für viele Outdoor-Fans ernüchternd aus. Die Wahl der richtigen Isomatte gleicht einem unbefriedigenden Kompromiss:</p>
+					
+					<h3>Klassische Schaumstoffmatten: Sperrig und oft unbequem</h3>
+					
+					<p>Die traditionellen Isomatten aus geschlossenzelligem Schaumstoff haben sich seit den 1970er Jahren kaum weiterentwickelt. Sie bieten zwar eine grundlegende Isolation vom kalten Boden, aber ihr Hauptproblem bleibt ungelöst: Mit durchschnittlich 55 cm Länge und 18 cm Durchmesser im zusammengerollten Zustand nehmen sie außen am Rucksack befestigt unverhältnismäßig viel Platz ein.</p>
+					
+					<TestimonialBox 
+						quote="Meine alte Schaumstoffmatte blieb ständig an Ästen hängen und machte mich in engen Passagen zur wandelnden Bremsbarriere"
+						author="Lisa"
+						role="passionierte Weitwanderin auf dem E5"
+					/>
+					
+					<p>Hinzu kommt: Mit einer Dicke von meist nur 0,8 bis 1,2 cm bieten diese Matten auf unebenem Untergrund nur minimalen Komfort. Wer schon einmal versucht hat, auf steinigem Untergrund oder Wurzelwerk mit so einer dünnen Matte zu schlafen, kennt das schmerzhafte Ergebnis.</p>
+					
+					<h3>Luftmatratzen: Pumpen, Pusten, Platzen</h3>
+					
+					<p>Die Alternative? Aufblasbare Luftmatratzen versprechen zwar mehr Komfort durch ihre Dicke von oft 5-8 cm, bringen aber ihre eigenen Probleme mit:</p>
+					
+					<ul class="feature-list">
+						<li><strong>Zeitaufwändiges Aufblasen:</strong> Nach einem anstrengenden Tag fehlt oft die Energie für 50-70 Atemzüge oder das mühsame Pumpen.</li>
+						<li><strong>Anfälligkeit für Beschädigungen:</strong> Eine einzige kleine Beschädigung, und die ganze Nacht ist ruiniert. Statistiken zeigen, dass etwa 22% aller Luftmatratzen bereits auf der ersten Mehrtagestour undicht werden.</li>
+						<li><strong>Hohe Geräuschentwicklung:</strong> Das typische "Knistern" und "Rascheln" bei jeder Bewegung hält nicht nur dich, sondern auch deine Zeltpartner wach.</li>
+					</ul>
+					
+					<TestimonialBox 
+						quote="Nach dem mühsamen Aufblasen meiner Luftmatratze wachte ich am zweiten Morgen bereits auf dem harten Boden auf. Irgendwo hatte sie Luft verloren - der Rest des Festivals war gelaufen."
+						author="Felix"
+						role="Festivalbesucher"
+					/>
+					
+					<h3>Ultraleichte Minimalisten-Lösungen: Kaum besser als der blanke Boden</h3>
+					
+					<p>Im Zuge des Ultraleicht-Trends sind zwar extrem leichte und kleine Matten auf den Markt gekommen, aber diese verschärfen das Komfortproblem oft noch. Mit reduzierter Dicke, schmalerem Schnitt und oft nur teilweiser Körperabdeckung opfern sie den Schlafkomfort komplett auf dem Altar der Gewichtsersparnis.</p>
+					
+					<div class="article-quote">
+						<p>Man kann entweder einigermaßen bequem schlafen und dafür einen riesigen Packsack mitschleppen, oder ultraleicht unterwegs sein und sich die ganze Nacht auf einer papierdicken Unterlage herumwälzen.</p>
+						<p class="article-quote-author">Johannes Müller, Outdoor-Blogger</p>
+					</div>
+					
+					<p>Die platzsparende Isomatte für Backpacking scheint ein unerreichbarer Traum zu bleiben – oder doch nicht?</p>
+					
+					<div class="highlight-box">
+						<h3>Was die perfekte Schlafunterlage können muss</h3>
+						
+						<p>Die fünf unverzichtbaren Eigenschaften der perfekten Isomatte:</p>
+						
+						<ol class="feature-list">
+							<li><strong>Kompaktes Packmaß:</strong> Eine wirklich praktische Isomatte muss im zusammengerollten Zustand nicht größer als eine 1-Liter-Wasserflasche sein, um problemlos IM Rucksack verstaut werden zu können, nicht außen.</li>
+							<li><strong>Müheloses Aufbauen:</strong> Nach einem anstrengenden Tag sollte die Vorbereitung des Nachtlagers so einfach wie möglich sein. Im Idealfall entfaltet sich die Matte von selbst, ohne dass man Energie für das Aufblasen aufwenden muss.</li>
+							<li><strong>Optimaler Schlafkomfort:</strong> Eine Dicke von mindestens 3-4 cm ist nötig, um den Körper ausreichend vom unebenen Untergrund zu isolieren und Druckpunkte zu vermeiden.</li>
+							<li><strong>Robustheit und Zuverlässigkeit:</strong> Outdoor-Bedingungen sind rau. Eine gute Isomatte muss mit spitzen Steinen, Tannenzapfen und dem rauen Festivalboden zurechtkommen.</li>
+							<li><strong>Thermoisolation:</strong> Selbst im Sommer kühlt der Boden nachts stark aus. Eine effektive Isomatte muss durch ihr Material und ihre Konstruktion die Körperwärme reflektieren.</li>
+						</ol>
+					</div>
+					
+					<div class="article-quote">
+						<p>Eine gute Nachtruhe ist kein Luxus, sondern eine Sicherheitsmaßnahme. Wer ausgeruht ist, trifft bessere Entscheidungen und hat bessere Reaktionszeiten – gerade im anspruchsvollen Gelände kann das lebenswichtig sein.</p>
+						<p class="article-quote-author">Martin Huber, Bergführer</p>
+					</div>
+					
+					<div class="article-image-container">
+						<img src="/images/isomatte-2.jpg" alt="Kompaktes Packmaß der Isomatte" class="article-image">
+						<p class="article-caption">Mit nur 25 x 12 cm Packmaß nimmt die Isomatte weniger Platz ein als eine Trinkflasche</p>
+					</div>
+					
+					<div class="highlight-box">
+						<h3>Die wissenschaftliche Perspektive</h3>
+						<p>Ergonomische Studien belegen, dass unser Körper während des Schlafs etwa alle 15-20 Minuten die Position wechselt. Dieser natürliche Mechanismus wird durch unbequeme Unterlagen gestört, was zu flacherem Schlaf führt.</p>
+						<p><em>"Die Qualität des Tiefschlafs entscheidet darüber, wie leistungsfähig wir am nächsten Tag sind. Selbst kleine Störungen durch unbequeme Unterlagen können die Regeneration erheblich beeinträchtigen."</em></p>
+						<p>- Dr. Katja Mayer, Schlafforscherin</p>
+					</div>
+				
+					<h2>Die revolutionäre Lösung: Die selbstaufblasbare Isomatte von Adventure Shop</h2>
+					
+					<p>Was zunächst wie ein zu gutes Versprechen klang, entpuppte sich als Wendepunkt: Eine kompakte selbstaufblasbare Isomatte, die tatsächlich hält, was sie verspricht. Die Isomatte von Adventure Shop vereint die besten Eigenschaften verschiedener Mattentechnologien in einem durchdachten Produkt.</p>
+					
+					<h3>1. Selbstaufblasende Technologie - ohne Pumpe, ohne Pusten</h3>
+					
+					<p>Im Gegensatz zu herkömmlichen Luftmatratzen nutzt die Adventure Shop Isomatte ein innovatives System mit integriertem Memory-Schaumstoff. Einmal ausgerollt, saugt sie automatisch Luft ein und entfaltet sich innerhalb von etwa 5 Minuten zu ihrer vollen Dicke von 3,8 cm.</p>
+					
+					<p>Der integrierte Hochleistungsventilmechanismus ermöglicht nicht nur das schnelle Einströmen der Luft beim Aufbau, sondern auch das effiziente Entweichen beim Zusammenrollen.</p>
+					
+					<TestimonialBox 
+						quote="Nach sechs Stunden Wanderung will ich mein Lager schnell aufbauen und mich erholen. Die selbstaufblasende Funktion ist Gold wert"
+						author="Michael"
+						role="begeisterter Trekker"
+					/>
+					
+					<h3>2. Minimales Packmaß trifft maximalen Komfort</h3>
+					
+					<p>Mit einem Packmaß von nur 25 x 12 cm nimmt die Isomatte weniger Platz ein als eine durchschnittliche Trinkflasche. Dennoch entfaltet sie sich zu einer vollwertigen Liegefläche von 185 x 55 cm - groß genug für erwachsene Personen und dennoch schmal genug, um in jedem Zelt Platz zu finden.</p>
+					
+					<TestimonialBox 
+						quote="Der Unterschied im Packvolumen ist verblüffend. Früher musste ich meine Isomatte außen am Rucksack befestigen. Jetzt passt sie problemlos ins Hauptfach und ist dort vor Beschädigungen geschützt"
+						author="Lisa"
+						role="Minimalistin"
+					/>
+					
+					<h3>3. Intelligentes Schichtdesign für optimalen Schlafkomfort</h3>
+					
+					<p>Die Adventure Shop Isomatte besteht aus drei spezialisierten Schichten:</p>
+					
+					<ul class="feature-list">
+						<li><strong>Oberseite:</strong> Weiches, hautfreundliches und rutschhemmendes Material, das selbst bei Bewegung im Schlafsack für sicheren Halt sorgt</li>
+						<li><strong>Mittelschicht:</strong> Druckentlastender Memory-Schaum, der sich dem Körper anpasst und Druckpunkte minimiert</li>
+						<li><strong>Unterseite:</strong> Robustes, wasserdichtes 75D Polyester mit verstärkter Beschichtung für hohe Abriebfestigkeit</li>
+					</ul>
+					
+					<p>Diese Konstruktion bietet nicht nur Komfort, sondern auch eine überraschend gute Wärmeisolation mit einem R-Wert von 2,4 - ausreichend für Frühjahr, Sommer und Herbst in unseren Breitengraden.</p>
+					
+					<h3>4. Durchdachte Details für echte Outdoor-Profis</h3>
+					
+					<p>Was die Isomatte wirklich von Mitbewerbern unterscheidet, sind die durchdachten Details:</p>
+					
+					<ul class="feature-list">
+						<li><strong>Multi-Flow-Ventilsystem:</strong> Ein patentiertes Ventil, das den Luftstrom beim Auf- und Abbau optimiert und gleichzeitig absolute Dichtheit garantiert</li>
+						<li><strong>Kompressionsgurte:</strong> Die mitgelieferten Gurte erleichtern nicht nur das Verstauen, sondern schützen auch das Ventil vor Beschädigungen</li>
+						<li><strong>Reparaturset:</strong> Ein kleines, aber vollständiges Reparaturset ist bereits im Lieferumfang enthalten - für absolute Sorglosigkeit unterwegs</li>
+					</ul>
+					
+					<div class="article-quote">
+						<p>Endlich eine Isomatte, die von echten Outdoor-Enthusiasten für echte Outdoor-Enthusiasten entwickelt wurde. Man merkt an jedem Detail, dass hier Menschen am Werk waren, die die Probleme aus eigener Erfahrung kennen.</p>
+						<p class="article-quote-author">Thomas Huber, Wanderblogger</p>
+					</div>
+				
+					<div class="article-image-container">
+						<img src="/images/isomatte-3.jpg" alt="Isomatte im Einsatz beim Camping" class="article-image">
+						<p class="article-caption">Die selbstaufblasbare Isomatte sorgt für erholsamen Schlaf in jeder Umgebung</p>
+					</div>
+					
+					<h2>Warum diese Isomatte das Leben von Backpackern, Minimalisten und Festivalbesuchern verändert</h2>
+					
+					<FeatureBox title="Für Backpacker: Endlich Platz für das Wesentliche">
+						<p>Wer mehrere Tage oder gar Wochen mit allem Nötigen im Rucksack unterwegs ist, kennt das ewige Dilemma: Jedes Gramm und jeder Kubikzentimeter zählt. Die Adventure Shop Isomatte löst dieses Problem auf elegante Weise:</p>
+						
+						<ul class="feature-list">
+							<li><strong>70% Platzersparnis</strong> im Vergleich zu herkömmlichen Isomatten</li>
+							<li><strong>Nur 890 Gramm Gewicht</strong> - leichter als viele Spezialmodelle</li>
+							<li><strong>Verstaubar IM Rucksack</strong> statt außen - bessere Gewichtsverteilung und kein Hängenbleiben mehr an Hindernissen</li>
+						</ul>
+						
+						<TestimonialBox 
+							quote="Der freigewordene Platz im Rucksack hat mir ermöglicht, endlich eine ordentliche Regenjacke und etwas mehr Verpflegung mitzunehmen. Das hat mir bei dem unerwarteten Wetterumschwung buchstäblich den Hintern gerettet."
+							author="Jana"
+							role="Alpenüberweg X5 Wanderin"
+						/>
+					</FeatureBox>
+					
+					<FeatureBox title="Für Minimalisten: Weniger ist mehr - aber nicht beim Schlafkomfort">
+						<p>Die minimalistische Philosophie bedeutet nicht, auf Komfort zu verzichten, sondern kluge Entscheidungen zu treffen. Die leichte Isomatte für minimalistisches Camping verkörpert diesen Gedanken perfekt:</p>
+						
+						<ul class="feature-list">
+							<li><strong>Multifunktionalität</strong> statt Speziallösungen für jeden Einsatzzweck</li>
+							<li><strong>Langlebiges Design</strong> anstelle von Wegwerfprodukten</li>
+							<li><strong>Durchdachte Konstruktion</strong> ohne überflüssige Features</li>
+						</ul>
+						
+						<TestimonialBox 
+							quote="Als Minimalist suche ich nicht nach dem billigsten oder leichtesten Produkt, sondern nach dem durchdachtesten. Diese Isomatte erfüllt genau meine Anforderungen: Sie löst ein echtes Problem, ohne neue zu schaffen."
+							author="Mark"
+							role="Minimalist"
+						/>
+					</FeatureBox>
+					
+					<div class="festival-section">
+						<div class="festival-content">
+							<FeatureBox title="Für Festivalbesucher: Schneller Aufbau, bessere Erholung, mehr Festivalenergie">
+								<p>Die typische Festivalerfahrung: Nach stundenlanger Anreise kämpft man sich mit Bergen von Gepäck durch überfüllte Campingbereiche, nur um festzustellen, dass man die Luftpumpe vergessen hat oder die mitgebrachte Isomatte zu sperrig für das kleine Zelt ist.</p>
+								
+								<p>Die selbstaufblasbare Isomatte für Festivals schafft Abhilfe:</p>
+								
+								<ul class="feature-list">
+									<li><strong>Schnelle Einsatzbereitschaft:</strong> Ausrollen, 5 Minuten warten, fertig!</li>
+									<li><strong>Robustheit:</strong> Keine Angst vor spitzen Gegenständen im Festivalboden</li>
+									<li><strong>Kompaktes Design:</strong> Passt auch in kleine Festivalzelte und lässt noch Platz für das Wichtigste</li>
+								</ul>
+								
+								<TestimonialBox 
+									quote="Letztes Jahr beim Hurricane Festival war ich nach zwei schlaflosen Nächten auf einer billigen Luftmatratze völlig erledigt. Dieses Jahr mit der Adventure Shop Isomatte habe ich tatsächlich geschlafen und konnte alle Bands genießen"
+									author="Sophie"
+									role="Festival-Fan"
+								/>
+							</FeatureBox>
+						</div>
+					</div>
+					
+					<h2>Häufig gestellte Fragen zur selbstaufblasenden Isomatte</h2>
+					
+					<FaqItem question="Wie funktioniert das Selbstaufblasen genau?">
+						<p>Die Isomatte enthält einen speziellen Memory-Schaumstoff, der unter Vakuum komprimiert wird. Sobald das Ventil geöffnet wird, dehnt sich der Schaum automatisch aus und saugt dabei Luft ein. Dieser Prozess dauert etwa 3-5 Minuten. Für zusätzlichen Komfort können Sie mit 2-3 kurzen Atemzügen die Matte noch etwas fester aufblasen – aber das ist optional und nicht unbedingt notwendig.</p>
+					</FaqItem>
+					
+					<FaqItem question="Ist die Isomatte auch für Seitenschläfer geeignet?">
+						<p>Absolut! Mit ihrer Dicke von 3,8 cm und dem speziellen druckentlastenden Schaumstoff wurde die Matte so konzipiert, dass sie auch für Seitenschläfer ausreichend Polsterung bietet. Die Konstruktion verhindert das bei vielen Luftmatratzen übliche "Durchliegen" an Hüfte und Schulter, was sie ideal für alle Schlafpositionen macht.</p>
+					</FaqItem>
+					
+					<FaqItem question="Wie robust ist die Matte wirklich bei Festivalnutzung?">
+						<p>Die Unterseite der Isomatte besteht aus verstärktem 75D Polyester – deutlich dicker als bei vielen Konkurrenzprodukten, die oft nur 40D oder 50D Material verwenden. Diese Verstärkung macht sie wesentlich widerstandsfähiger gegen spitze Gegenstände und raue Untergründe. Dennoch empfehlen wir, vor dem Auslegen einen kurzen Blick auf den Untergrund zu werfen und offensichtliche Gefahrenquellen wie Glasscherben zu entfernen.</p>
+					</FaqItem>
+					
+					<FaqItem question="Wie packe ich die Isomatte richtig zusammen?">
+						<ol class="feature-list">
+							<li>Öffnen Sie das Ventil und rollen Sie die Matte vom Fußende her auf, um die Luft herauszudrücken</li>
+							<li>Schließen Sie das Ventil, sobald die meiste Luft entwichen ist</li>
+							<li>Entrollen Sie die Matte noch einmal und öffnen das Ventil erneut</li>
+							<li>Falten Sie die Matte der Länge nach und rollen Sie sie nun mit geschlossenem Ventil fest auf</li>
+							<li>Sichern Sie die Rolle mit den mitgelieferten Kompressionsgurten</li>
+						</ol>
+						<p>Diese Methode garantiert das kleinste Packmaß und schont gleichzeitig das Material.</p>
+					</FaqItem>
+					
+					<FaqItem question="Ist die platzsparende Isomatte für Backpacking auch für Wintercamping geeignet?">
+						<p>Mit einem R-Wert von 2,4 ist die Isomatte für Temperaturen bis etwa 0°C gut geeignet. Für echtes Wintercamping bei deutlichen Minusgraden empfehlen wir, sie mit einer dünnen geschlossenzelligen Unterlage zu kombinieren. Der Vorteil: Selbst mit dieser Zusatzunterlage bleibt das Gesamtpackmaß noch deutlich kleiner als bei vielen herkömmlichen Wintermatten.</p>
+					</FaqItem>
+					
+					<FaqItem question="Wie lange hält die Selbstaufblasfunktion an?">
+						<p>Die spezielle Schaumstoffmischung wurde auf Langlebigkeit optimiert und behält ihre Rückstellkraft auch nach jahrelangem Gebrauch. In unseren Tests zeigte sich selbst nach 500 Kompressionszyklen (was etwa 3-5 Jahren intensiver Nutzung entspricht) keine messbare Verringerung der Selbstaufblasfunktion.</p>
+					</FaqItem>
+					
+					<FaqItem question="Kann ich die Matte auch für längere Zeit aufgeblasen lassen?">
+						<p>Ja, im Gegensatz zu reinen Luftmatratzen schadet es der Adventure Shop Isomatte nicht, wenn sie über längere Zeit ausgerollt bleibt. Im Gegenteil: Gelegentliches längeres Entfalten tut dem Schaumstoff gut und erhält seine Elastizität. Lagern Sie die Matte für längere Zeiträume (mehrere Monate) idealerweise ausgerollt mit geöffnetem Ventil an einem trockenen Ort.</p>
+					</FaqItem>
+					
+					<h2>Entdecke den Unterschied: Dein Weg zu erholsamen Nächten unter freiem Himmel</h2>
+					
+					<p>Die Tage, an denen du dich zwischen schwerem Gepäck und erholsamem Schlaf entscheiden musstest, sind vorbei. Die selbstaufblasbare Isomatte von Adventure Shop vereint endlich beides – minimales Packmaß und maximalen Komfort.</p>
+					
+					<p>Stell dir vor, wie du nach einem langen Wandertag dein Lager in Minuten aufschlägst, während andere noch mit dem Aufpumpen ihrer Matratzen kämpfen. Wie du morgens erholt aufwachst, bereit für neue Abenteuer, während andere über Rückenschmerzen klagen. Wie dein Rucksack endlich Platz für all die Dinge bietet, die dir wirklich wichtig sind.</p>
+					
+					<p>Diese Isomatte ist mehr als nur eine Schlafunterlage – sie ist dein Ticket zu unbeschwerten Outdoor-Erlebnissen ohne Kompromisse.</p>
+					
+					<p>Über 2.500 Outdoor-Enthusiasten vertrauen bereits auf die Adventure Shop Isomatte. Die Bewertungen sprechen für sich: 4,8 von 5 Sternen und zahlreiche begeisterte Erfahrungsberichte zeigen, dass hier ein echtes Problem gelöst wurde.</p>
+					
+					<div class="highlight-box">
+						<h3>Sichere dir deine Adventure Shop Isomatte – bevor die Outdoor-Saison startet</h3>
+						<p>Die Nachfrage steigt mit jedem Tag, an dem das Thermometer nach oben klettert. Gerade jetzt, wo die Festival- und Wandersaison in den Startlöchern steht, sichern sich immer mehr Outdoor-Fans diese revolutionäre Schlafunterlage.</p>
+						<p>Prüfe jetzt die Verfügbarkeit und starte entspannt in dein nächstes Abenteuer!</p>
+					</div>
+					
+					<a href="#" class="cta-button">Jetzt Verfügbarkeit prüfen & besser schlafen</a>
+					
+					<p class="article-lead">PS: Adventure Shop gewährt auf alle Produkte eine 30-Tage-Geld-zurück-Garantie. Teste die Isomatte auf deinem nächsten Trip – wenn sie dich nicht überzeugt, sendest du sie einfach zurück. Ohne Wenn und Aber. So kannst du risikofrei entdecken, was tausende Outdoor-Fans bereits wissen: Guter Schlaf unterwegs muss weder sperrig noch kompliziert sein.</p>
+				</div>
+			</article>
+		</main>
+		
+		<footer class="newspaper-footer">
+			<p>© {today.getFullYear()} Outdoor Journal | Advertorial | Adventure Shop GmbH</p>
+		</footer>
+	</div>
+</NewspaperLayout>
+
+<style>
+	/* Additional page-specific styles */
+	.article-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	.article-lead:last-of-type {
+		font-size: 1.1rem;
+		font-style: italic;
+		margin-top: 2rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--newspaper-border);
+	}
+
+	/* Yellow background for festival section */
+	.festival-section {
+		background-color: #FFEB3B; /* Yellow background */
+		padding: 1rem;
+		margin: 2rem -1rem;
+	}
+	
+	/* Content wrapper to constrain width */
+	.festival-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.festival-section .highlight<boltAction type="file" filePath="src/pages/index.astro">
+	.festival-section .highlight-box {
+		background-color: transparent;
+		border: none;
+		margin: 0;
+	}
+
+	.festival-section .testimonial {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+	
+	.festival-section h3 {
+		margin-top: 0;
+		font-weight: 900;
+		max-width: 80%;
+	}
+
+	@media (max-width: 768px) {
+		.festival-section {
+			margin: 2rem -0.5rem;
+			padding: 0.75rem;
+		}
+		
+		.festival-section h3 {
+			max-width: 100%;
+		}
+	}
+</style>
